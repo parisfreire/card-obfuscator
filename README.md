@@ -25,16 +25,16 @@ Once the previous command is finished, let’s run the Spring-Boot project:
 
 ### Running with java -jar command
 
-To run your Spring Boot app from a command line in a Terminal window you can you the java -jar command. This is provided your Spring Boot app was packaged as an executable jar file.
+To run your Spring Boot app from a command line in a Terminal window you can you the java -jar command. This is provided your Spring Boot app was packaged as an executable war file.
 
 ```
-java -jar target/card-obfuscator-0.1.0.jar
+java -jar target/card-obfuscator-0.1.0.war
 ```
 
 ### Manual deployment
 
 You can run by hand the app deploying it on a Tomcat copying the files under the following directory:
 
-**target/card-obfuscator-0.1.0.jar**
+**target/card-obfuscator-0.1.0.war**
 
 
