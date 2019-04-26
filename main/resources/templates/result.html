@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Cards result</title>
+</head>
+<body>
+<h1>Result</h1>
+<table>
+    <tr th:if="${cards.empty}">
+        <td colspan="2">No Cards Available</td>
+    </tr>
+    <tr>
+        <th>Bank</th>
+        <th>Card Number</th>
+        <th>Expiry Date</th>
+    </tr>
+    <tr th:each="card: ${cards}">
+        <td th:text="${card.bank}" />
+        <td th:text="${card.number}" />
+        <td th:text="${card.expiryDate}" />
+    </tr>
+</table>
+</body>
+</html>

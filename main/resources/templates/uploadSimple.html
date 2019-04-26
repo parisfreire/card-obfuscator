@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Simple Card Upload</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="#" th:action="@{/uploadSimple}" th:object="${card}" method="post">
+        <p>Bank: <input type="text" th:field="*{bank}" /></p>
+        <p>Number: <input type="text" th:field="*{number}" /></p>
+        <p>Expiry Date: <input type="text" th:field="*{expiryDate}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
