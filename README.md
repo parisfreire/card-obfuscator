@@ -5,13 +5,13 @@
 If you don't have Maven installed, you can use maven wrapper in this project.
 To be able to run your Spring Boot app you will need to first build it. You will need to run it from the project folder which contains the pom.xml file.
 
-Unix system:
+**Unix system**:
 
 ```
 ./mvnw clean install
 ```
 
-Windows:
+**Windows**:
 
 ```
 ./mvnw.cmd clean install
